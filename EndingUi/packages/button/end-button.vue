@@ -1,28 +1,10 @@
-<template>
-<div class="uni-switch">
-  <div class="wrapper">
-    <span>
-      <slot></slot>
-    </span>
-    <div
-      :class="[{closed: !checked}, 'switch-box']"
-      @click="handleChange(value)">
-      <span :class="{closed: !checked}"></span>
-    </div>
-    <input
-      type="checkbox"
-      @change="handleChange"
-      :true-value="activeValue"
-      :false-value="inactiveValue"
-      :disabled="disabled"
-      :value="value"/>
-  </div>
-</div>
+<template lang="pug">
+.end-button.js-effect-ripple kkkk
 </template>
 
 <script>
  export default {
-  name: "UniSwitch",
+  name: "EndButton",
   data() {
     return {}
   },
@@ -56,3 +38,9 @@
   }
  }
 </script>
+
+<style lang="stylus">
+  .end-button
+    width 100px
+    height 50px
+</style>

@@ -1,8 +1,11 @@
-import UniSwitch from '../EndingUi/packages/switch/index';
+import EndSwitch from '../EndingUi/packages/switch/index';
+import EndButton from '../EndingUi/packages/button/index';
+require('../EndingUi/js/ripple')
 // ...如果还有的话继续添加
 
 const components = [
- UniSwitch,
+ EndSwitch,
+ EndButton,
  // ...如果还有的话继续添加
 ]
 
@@ -19,6 +22,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
  install,
- UniSwitch,
+ EndSwitch,
  // ...如果还有的话继续添加
 }
